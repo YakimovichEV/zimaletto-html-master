@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="/scss/style.min.css" />
+
+        <title>Zimaletto</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img
+                                class="navbar-logo"
+                                src="/img/running.svg"
+                                alt=""
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown active">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Каталог
+                                    </a>
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="navbarDropdown"
+                                    >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/shirt.svg"
+                                                alt=""
+                                            />
+                                            Футболки</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/shorts.svg"
+                                                alt=""
+                                            />
+                                            Шорты</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/sneakers.svg"
+                                                alt=""
+                                            />
+                                            Кроссовки</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/windbreaker.svg"
+                                                alt=""
+                                            />
+                                            Ветровки</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/polo-shirt.svg"
+                                                alt=""
+                                            />
+                                            Поло</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/jeans.svg"
+                                                alt=""
+                                            />
+                                            Джинсы</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/hoodie.svg"
+                                                alt=""
+                                            />
+                                            Худи</a
+                                        >
+                                        <a class="dropdown-item" href="#">
+                                            <img
+                                                class="icon"
+                                                src="/img/cap.svg"
+                                                alt=""
+                                            />
+                                            Бейсболки</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+
+                            <div class="menu-right d-flex">
+                                <div class="menu-contact">
+                                    <a href="tel:+78312826000">
+                                        <img src="/img/phone.svg" alt="" />
+                                        <span>+7 (831) 282-60-00</span>
+                                    </a>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#login"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                    <a href="" class="cart">
+                                        <img
+                                            src="/img/shopping-cart.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+
+                                <!-- <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#loginErr"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#register"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#subscribe"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#registerErr"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#check-phone"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#reviews"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="menu-user">
+                                    <button
+                                        class="profile"
+                                        data-toggle="modal"
+                                        data-target="#passForgot"
+                                    >
+                                        <img src="/img/person.svg" alt="" />
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="home-banner">
+                <div class="container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block">
+                                <img src="/img/banner.jpg" alt="" />
+                                <h2>Подарок на первый заказ.</h2>
+                                <p>
+                                    Получите 500 рублей за подписку на рассылку
+                                </p>
+                                <a href="">Подписаться</a>
+                            </div>
+                            <div class="swiper-slide block">
+                                <img src="/img/banner.jpg" alt="" />
+                                <h2>Подарок на первый заказ.</h2>
+                                <p>
+                                    Получите 500 рублей за подписку на рассылку
+                                </p>
+                                <a href="">Без ноги остаться</a>
+                            </div>
+                            <div class="swiper-slide block">
+                                <img src="/img/banner.jpg" alt="" />
+                                <h2>Подарок на первый заказ.</h2>
+                                <p>
+                                    Получите 500 рублей за подписку на рассылку
+                                </p>
+                                <a href="">С ногой отстаться</a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-menu">
+                <div class="container">
+                    <div class="swiper-container-menu">
+                        <div class="swiper-wrapper">
+                            <a href="" class="swiper-slide active">
+                                <span>Все</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Футболки</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Шорты</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Кроссовки</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Ветровки</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Поло</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Джинсы</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Толстовки</span>
+                            </a>
+
+                            <a href="" class="swiper-slide">
+                                <span>Бейсболки</span>
+                            </a>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-products">
+                <div class="container">
+                    <h3 class="all_products">Все товары</h3>
+                    <div class="products-wrapper">
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1349791_lifestyle?$plpDeskRF$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1396756_lifestyle?$plpDeskRF$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-CYO0020D_lifestyle?$plpDeskRF$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1396865_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1298915_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1396838_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1298915_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1368762_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1298915_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <img
+                                    src="https://www.rlmedia.io/is/image/PoloGSI/s7-1397402_lifestyle?$rl_df_pdp_5_7_lif$"
+                                    alt=""
+                                />
+                            </div>
+                            <a href="" class="title">Футболка Ralph Lauren</a>
+                            <p class="description">
+                                Эта хлопковая футболка, выстиранная для создания
+                                идеального лаконичного вида, - незаменимая вещь,
+                                к которой вы будете тянуться снова и снова.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="price">
+                                <b>3200 ₽</b>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <div class="footer-left">
+                            <div class="phones">
+                                <div class="phone-item">
+                                    <span>Бесплатный звонок по РФ</span>
+                                    <a href="tel:+78312826000"
+                                        >+7 (831) 282-60-00</a
+                                    >
+                                </div>
+                                <div class="phone-item">
+                                    <span>Для приема заказов</span>
+                                    <a href="tel:+79040664685"
+                                        >+7 (904) 066-46-685</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="work-time">
+                                График работы по будням с 9:00 до 18:00
+                            </div>
+                            <div class="work-email">
+                                <a href="mailto:info@.ru">Email: info@.ru</a>
+                                <a href="" class="site-help">Поддержка</a>
+                            </div>
+                        </div>
+                        <div class="footer-center">
+                            <div class="social">
+                                <a href="">Мы в вконтакте</a>
+                                <a href="">Мы в instagram</a>
+                            </div>
+                        </div>
+                        <div class="footer-right">
+                            <div class="person">
+                                <a href="">
+                                    <img src="/img/person2.svg" alt="" /><span
+                                        >Войти/Регистрация</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <span>©2021. «Zimaletto»</span>
+                        <a href="">Условия и соглашения</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper(".swiper-container", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+            const menuSwiper = new Swiper(".swiper-container-menu", {
+                slidesPerView: "auto",
+                spaceBetween: 95,
+
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </body>
+</html>
+
+<!-- Login form -->
+<div
+    class="modal fade"
+    id="login"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/person.svg" alt="" />
+                    <div class="modal-name">Войти в личный кабинет</div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb">
+                            <input
+                                class="phone"
+                                name=""
+                                type="text"
+                                placeholder="Телефон"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Пароль"
+                            />
+                        </div>
+                        <div class="forgot_pass">Забыли пароль?</div>
+                        <button>Войти</button>
+                    </form>
+                    <div class="modal-txt">
+                        Впервые у нас? <span>Зарегистрироваться</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login form with check -->
+<div
+    class="modal fade"
+    id="loginErr"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/person.svg" alt="" />
+                    <div class="modal-name">Войти в личный кабинет</div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb">
+                            <input
+                                class="phone"
+                                name=""
+                                type="text"
+                                placeholder="Телефон"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Пароль"
+                            />
+                        </div>
+                        <div class="error-txt">
+                            Не правильный логин или пароль
+                        </div>
+                        <div class="forgot_pass">Забыли пароль?</div>
+                        <button>Войти</button>
+                    </form>
+                    <div class="modal-txt">
+                        Впервые у нас? <span>Зарегистрироваться</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot password form -->
+<div
+    class="modal fade"
+    id="passForgot"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/person.svg" alt="" />
+                    <div class="modal-name">Восстановление пароля</div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb">
+                            <input
+                                class="phone"
+                                name=""
+                                type="text"
+                                placeholder="Телефон"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Пароль"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Новый пароль (мин. 6 символов)"
+                            />
+                        </div>
+                        <div class="btn-block-2">
+                            <button
+                                class="decline"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                Отменить
+                            </button>
+                            <button>Обновить пароль</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register form -->
+<div
+    class="modal fade"
+    id="register"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/person.svg" alt="" />
+                    <div class="modal-name">Регистрация</div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb">
+                            <input
+                                class="phone"
+                                name=""
+                                type="text"
+                                placeholder="Телефон"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Пароль"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Подтвердите пароль"
+                            />
+                        </div>
+                        <div class="check-block">
+                            <div class="line">
+                                <input type="checkbox" name="" id="r-mail" />
+                                <label for="r-mail"
+                                    >Хочу получать выгодные предложения от
+                                    магазина</label
+                                >
+                            </div>
+                            <div class="line">
+                                <input
+                                    type="checkbox"
+                                    checked
+                                    name=""
+                                    id="r-pol"
+                                />
+                                <label for="r-pol"
+                                    >Принимаю условия
+                                    <a href="">Пользовательского соглашения</a>,
+                                    <a href=""
+                                        >Политики конфиденциальности</a
+                                    ></label
+                                >
+                            </div>
+                        </div>
+                        <button>Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mailing form -->
+<div
+    class="modal fade"
+    id="subscribe"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/modal-mail.svg" alt="" />
+                    <div class="modal-name">
+                        Подпишитесь на нашу рассылку и получите промокод на 500
+                        RUB
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb">
+                            <input
+                                class="mail"
+                                name=""
+                                type="text"
+                                placeholder="E-mail"
+                            />
+                        </div>
+
+                        <button>Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register form with check -->
+<div
+    class="modal fade"
+    id="registerErr"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/person.svg" alt="" />
+                    <div class="modal-name">Регистрация</div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb">
+                            <input
+                                class="phone"
+                                name=""
+                                type="text"
+                                placeholder="Телефон"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Пароль"
+                            />
+                        </div>
+                        <div class="inpb">
+                            <input
+                                class="pass"
+                                name=""
+                                type="text"
+                                placeholder="Подтвердите пароль"
+                            />
+                        </div>
+
+                        <div class="error-txt">
+                            Пользователь с таким номером телефона уже
+                            зарегистрирован
+                        </div>
+                        <div class="check-block">
+                            <div class="line">
+                                <input type="checkbox" name="" id="r-mail" />
+                                <label for="r-mail"
+                                    >Хочу получать выгодные предложения от
+                                    магазина</label
+                                >
+                            </div>
+                            <div class="line">
+                                <input
+                                    type="checkbox"
+                                    checked
+                                    name=""
+                                    id="r-pol"
+                                />
+                                <label for="r-pol"
+                                    >Принимаю условия
+                                    <a href="">Пользовательского соглашения</a>,
+                                    <a href=""
+                                        >Политики конфиденциальности</a
+                                    ></label
+                                >
+                            </div>
+                        </div>
+                        <button>Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal phone -->
+
+<!-- Register form -->
+<div
+    class="modal fade"
+    id="check-phone"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="/img/person.svg" alt="" />
+                    <div class="modal-name">Подтвердите номер телефона</div>
+                </div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="inpb digit">
+                            <input name="" type="text" maxlength="1" />
+                            <span></span>
+                            <input name="" type="text" maxlength="1" />
+                            <span></span>
+                            <input name="" type="text" maxlength="1" />
+                            <span></span>
+                            <input name="" type="text" maxlength="1" />
+                        </div>
+                        <div class="send-check">
+                            <span>Отправить повторно</span> <b>1:59</b>
+                            <button>Далее</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reviews form -->
+<div
+    class="modal fade"
+    id="reviews"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog reviews" role="document">
+        <div class="modal-content">
+            <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="rev-top">Добавить отзыв</div>
+                <div class="form">
+                    <form action="" method="POST">
+                        <div class="line-rev">
+                            <b>Ваша оценка: </b>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="inpb line-rev">
+                            <b>Ваше имя:</b>
+                            <input
+                                class=""
+                                name=""
+                                type="text"
+                                placeholder="Введите Ваше имя"
+                            />
+                        </div>
+                        <div class="inpb line-rev">
+                            <b>Ваше отзыв:</b>
+                            <textarea name=""></textarea>
+                        </div>
+
+                        <button>Добавить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
