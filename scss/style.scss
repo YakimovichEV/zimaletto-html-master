@@ -26,6 +26,8 @@ body {
 }
 
 /* Imports */
+
+/* Client side */
 @import "./components/variables.scss";
 @import "./components/btn.scss";
 @import "./components/header.scss";
@@ -37,3 +39,6 @@ body {
 @import "./components/cart-product.scss";
 @import "./components/footer.scss";
 @import "./components/modal-windows.scss";
+
+/* Admin panel */
+@import "./components/admin-panel/order.scss";
