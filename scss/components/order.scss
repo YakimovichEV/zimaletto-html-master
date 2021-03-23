@@ -108,8 +108,15 @@
 
         .order {
             display: flex;
-            border-bottom: 1px solid #c4c4c4;
+            align-items: center;
+            justify-content: space-between;
             position: relative;
+
+            &__left {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
 
             &__photo {
                 margin-right: 20px;
@@ -125,7 +132,8 @@
                 }
             }
 
-            .order__title {
+            &__title {
+                margin-bottom: 5px;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 16px;
@@ -133,12 +141,21 @@
                 color: #1d1d1d;
             }
 
-            .order__date {
+            &__date {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 15px;
                 color: #a6a6a6;
+            }
+
+            &__new {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 15px;
+                text-align: right;
+                color: #2d9cdb;
             }
         }
     }
