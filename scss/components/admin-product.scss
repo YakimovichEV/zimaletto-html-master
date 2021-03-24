@@ -18,6 +18,7 @@
 
 .header__logo {
     padding-top: 20px;
+    padding-right: 122px;
 }
 
 .header__input input {
@@ -57,6 +58,19 @@
             width: 14px;
             height: 14px;
             vertical-align: inherit;
+        }
+    }
+}
+
+.product-effects {
+    display: none;
+
+    a {
+        text-decoration: none;
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
